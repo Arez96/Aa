@@ -3,13 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    ---clr--en: (#FFF199);
+    ---clr--to: (#060E07);
+    ---clr--tre: (#B287C0);
+}
 
 /* Navbar */
 .navbar{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #060E07;
     position: sticky;
     top: 0;
 }
@@ -30,9 +35,9 @@
     transition: all .5 ease;
 }
 .navbar ul li a:hover{
-    background-color:#FFF199;
-    color:#B287C0;
-    box-shadow: 0 0 10px #FFF199; 
+    background-color:#B287C0;
+    color:#FFF199;
+    box-shadow: 0 0 10px #B287C0; 
 }
 
 /* Forside section */
@@ -44,7 +49,6 @@
     justify-content: center;
     align-items: center;
     color: #FFF199;
-
 }
 #forside::before{
     content: "";
@@ -55,7 +59,7 @@
     height: 900px;
     width: 100%;
     z-index: -1;
-    
+    opacity: .8;   
 }
 .hjem{
     display: flex;
@@ -64,9 +68,97 @@
     align-items: center;
     position: absolute;
     top: 30%;
-    right: 10%;
+    right: 10%;   
+}
+.titel{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    z-index: -1;
+  
+   
+}
+.knap{
+     padding: 10px 35px;
+     background-color: transparent;
+     border: 3px solid #B287C0;
+     color: #FFF199;
+     outline: none ;
+     transition: .6s ease;
+     font-size: 15px; 
+}
+.knap:hover{
+    cursor: pointer;
+    background-color: #B287C0;
+    color: #FFF199;
+    box-shadow: 0 0 5px #B287C0, 0 0 10px #B287C0, 0 0 15px #B287C0;
+    font-weight: bold; 
+      
 }
 
-.titel{
-    
+/* Om mig */
+#ommig{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    padding: 20px;  
+    margin-bottom: 50px;
+    align-items: center; 
+}
+.knap2{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 3px solid #B287C0;
+    color: #060E07;
+    outline: none ;
+    transition: .6s ease;
+    font-size: 15px; 
+}
+.knap2:hover{
+   cursor: pointer;
+   background-color: #B287C0;
+   color: #FFF199;
+   box-shadow: 0 0 5px #B287C0, 0 0 10px #B287C0, 0 0 15px #B287C0;
+   font-weight: bold; 
+     
+}
+#billede{
+    display:flex ;
+}
+#billede img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px; 
+}
+
+/* portfolie section */
+#portfolie{
+    display: flex;
+    flex-direction: column;
+    background-color: #060E07;
+    color: #FFF199;
+    align-items: center;
+    padding: 20px;
+
+}
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallary img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
 }
