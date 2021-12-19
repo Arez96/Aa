@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 :root{
-    ---clr--en: (#FFF199);
-    ---clr--to: (#060E07);
-    ---clr--tre: (#B287C0);
+    ---clr--en: (#FFF199) ;
+    ---clr--to: (#060E07) ;
+    ---clr--tre: (#B287C0) ;
 }
 html{
     scroll-behavior: smooth;
@@ -36,7 +36,7 @@ html{
     text-decoration: none;
     color: #FFF199;
     padding: 8px 25px;
-    transition: all .5 ease;
+    transition: all .5s ease;
 }
 .navbar ul li a:hover{
     background-color:#B287C0;
@@ -48,7 +48,7 @@ html{
 #forside{
     display: flex;
     flex-direction: column;
-    background-color:rgba(0, 0,  0, 0,5);
+    background-color:rgba(0, 0,  0, 0.5);
     height: 840px;
     justify-content: center;
     align-items: center;
@@ -228,3 +228,45 @@ box-shadow: 0 0 20px #B287C0;
     width: 50px;
     margin: 10px;
 }
+
+/* photoshop */
+#photoshop{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0,  0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF199;
+}
+#photoshop::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:url('camera.jpg') no-repeat center center/cover ;
+    height: 900px;
+    width: 100%;
+    opacity: .8;   
+}
+
+/* iværkset */
+#iværkset{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0,  0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF199;
+}
+#iværkset::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:url('lampe.jpg') no-repeat center center/cover ;
+    height: 900px;
+    width: 100%;
+    opacity: .8;
+    }  
